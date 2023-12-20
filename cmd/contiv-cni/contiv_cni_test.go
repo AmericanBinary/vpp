@@ -20,8 +20,8 @@ import (
 	"net"
 	"testing"
 
+	"github.com/americanbinary/vpp/plugins/podmanager/cni"
 	"github.com/containernetworking/cni/pkg/skel"
-	"github.com/contiv/vpp/plugins/podmanager/cni"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 

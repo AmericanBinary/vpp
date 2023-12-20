@@ -19,10 +19,10 @@ package v1
 import (
 	time "time"
 
-	nodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
-	versioned "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/client/listers/nodeconfig/v1"
+	nodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	versioned "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/listers/nodeconfig/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

@@ -24,19 +24,19 @@ source code folder between the host and the development container. To do that,
 map the source folder on your host into the development container when you 
 start it up as follows:
 ```bash
-docker run -v <path-to-source-folder-on-host>:/root/go/src/github.com/contiv/vpp/ -it --name <dev-vontainer-name> --rm <dev-container-image> bash
+docker run -v <path-to-source-folder-on-host>:/root/go/src/github.com/americanbinary/vpp/ -it --name <dev-vontainer-name> --rm <dev-container-image> bash
 ``` 
 For example, if the contiv-vpp source code is located in the `src/` folder
 under your Go path root folder on your host, the command to start the
 development container will be:
 ```
-docker run -v $GOPATH/src/github.com/contiv/vpp/:/root/go/src/github.com/contiv/vpp/ -it --name dev-contiv --rm contivvpp/dev-vswitch bash
+docker run -v $GOPATH/src/github.com/americanbinary/vpp/:/root/go/src/github.com/americanbinary/vpp/ -it --name dev-contiv --rm contivvpp/dev-vswitch bash
 ```
 
 You can either download the development container from Dockerhub, or build it 
 locally on your host from the contiv/vpp/docker directory as described [here][1].
 
-[1]: https://github.com/contiv/vpp/blob/master/docker/README.md
+[1]: https://github.com/americanbinary/vpp/blob/master/docker/README.md
 
 To use the development image for testing with specific version of VPP, see
 [DEVIMAGE.md](../DEVIMAGE.md).

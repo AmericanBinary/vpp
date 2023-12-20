@@ -26,9 +26,9 @@ import (
 	"go.ligato.io/cn-infra/v2/infra"
 	"go.ligato.io/cn-infra/v2/rpc/grpc"
 
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/podmanager/cni"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/podmanager/cni"
 )
 
 const (

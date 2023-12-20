@@ -17,7 +17,7 @@
 package processor
 
 import (
-	"github.com/contiv/vpp/plugins/sfc/renderer"
+	"github.com/americanbinary/vpp/plugins/sfc/renderer"
 	"go.ligato.io/cn-infra/v2/datasync"
 )
 

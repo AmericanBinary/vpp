@@ -17,11 +17,11 @@ package ipnet
 import (
 	"net"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	customnetmodel "github.com/contiv/vpp/plugins/crd/handler/customnetwork/model"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	customnetmodel "github.com/americanbinary/vpp/plugins/crd/handler/customnetwork/model"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 
 	"go.ligato.io/vpp-agent/v3/proto/ligato/linux/l3"
 	"go.ligato.io/vpp-agent/v3/proto/ligato/vpp/l3"
@@ -123,13 +123,13 @@ func (n *IPNet) Resync(event controller.Event, kubeStateData controller.KubeStat
 
 // configureVswitchConnectivity configures base vSwitch VPP connectivity.
 // Namely, it configures:
-//  - physical NIC interfaces
-//  - connectivity to the host stack (Linux)
-//  - one route in VPP for every host interface
-//  - one route in the host stack to direct traffic destined to pods via VPP
-//  - one route in the host stack to direct traffic destined to services via VPP
-//  - inter-VRF routing
-//  - IP neighbor scanning
+//   - physical NIC interfaces
+//   - connectivity to the host stack (Linux)
+//   - one route in VPP for every host interface
+//   - one route in the host stack to direct traffic destined to pods via VPP
+//   - one route in the host stack to direct traffic destined to services via VPP
+//   - inter-VRF routing
+//   - IP neighbor scanning
 func (n *IPNet) configureVswitchConnectivity(event controller.Event, txn controller.ResyncOperations) error {
 	// configure physical NIC
 	err := n.configureVswitchNICs(event, txn)

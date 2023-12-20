@@ -23,12 +23,12 @@ import (
 
 	"go.ligato.io/cn-infra/v2/health/statuscheck/model/status"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	vppnodemodel "github.com/contiv/vpp/plugins/nodesync/vppnode"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	vppnodemodel "github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 )
 
 // createNodeTestData creates a test vector that roughly corresponds to a 3-node

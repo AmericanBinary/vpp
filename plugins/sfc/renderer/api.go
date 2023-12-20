@@ -21,7 +21,7 @@ package renderer
 import (
 	"fmt"
 
-	"github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 // SFCRendererAPI defines the API of Service Function Chain Renderer.

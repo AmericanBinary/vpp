@@ -37,13 +37,13 @@ import (
 	intf_vppcalls "go.ligato.io/vpp-agent/v3/plugins/vpp/ifplugin/vppcalls"
 	vpp_interfaces "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/interfaces"
 
+	stn_grpc "github.com/americanbinary/vpp/cmd/contiv-stn/model/stn"
+	"github.com/americanbinary/vpp/plugins/contivconf/config"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	nodeconfig "github.com/americanbinary/vpp/plugins/crd/handler/nodeconfig/model"
+	nodeconfigcrd "github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	"github.com/americanbinary/vpp/plugins/ksr"
 	"github.com/apparentlymart/go-cidr/cidr"
-	stn_grpc "github.com/contiv/vpp/cmd/contiv-stn/model/stn"
-	"github.com/contiv/vpp/plugins/contivconf/config"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	nodeconfig "github.com/contiv/vpp/plugins/crd/handler/nodeconfig/model"
-	nodeconfigcrd "github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
-	"github.com/contiv/vpp/plugins/ksr"
 )
 
 // NodeToNodeTransport configuration values enum
@@ -136,6 +136,7 @@ const (
 //   - NodeConfig CRD
 //   - STN daemon
 //   - implicit values determined on run-time - e.g. use the first interface by name/index
+//
 // ContivConf reads all the sources of the configuration and for each option
 // determines the right value based on priorities.
 type ContivConf struct {
@@ -256,11 +257,11 @@ func getNodeConfig(cfg *config.Config, nodeName string) *config.NodeConfig {
 }
 
 // Init does several operations:
-//  - loads Contiv configuration file
-//  - parses IP subnets configured for IPAM
-//  - for contiv-init:
-//       * if crdNodeConfigurationDisabled=false, waits for NodeConfig CRD to be available
-//       * if stealFirstNIC=true, lists Linux interfaces to obtain the first one
+//   - loads Contiv configuration file
+//   - parses IP subnets configured for IPAM
+//   - for contiv-init:
+//   - if crdNodeConfigurationDisabled=false, waits for NodeConfig CRD to be available
+//   - if stealFirstNIC=true, lists Linux interfaces to obtain the first one
 func (c *ContivConf) Init() (err error) {
 	// initialize callbacks
 	if c.UnitTestDeps != nil {

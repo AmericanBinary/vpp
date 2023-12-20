@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 	"go.ligato.io/cn-infra/v2/health/statuscheck/model/status"
 
 	"github.com/onsi/gomega"
@@ -32,7 +32,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/contiv/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/ksr/model/policy"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

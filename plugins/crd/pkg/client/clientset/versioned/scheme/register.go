@@ -17,9 +17,9 @@
 package scheme
 
 import (
-	contivppv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/contivppio/v1"
-	nodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
-	telemetryv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/telemetry/v1"
+	contivppv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/contivppio/v1"
+	nodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	telemetryv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/telemetry/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

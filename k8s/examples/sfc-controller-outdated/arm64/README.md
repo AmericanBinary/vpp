@@ -151,7 +151,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 ## Prepare configuration file for kubernetes contiv/vpp network plugin:
 ```
-git clone https://github.com/contiv/vpp.git
+git clone https://github.com/americanbinary/vpp.git
 cd vpp/k8s/contiv-vpp/
 sed -i 's/tag: latest/tag: v2.1.3-98-g1e8734b51/g' ./values-latest.yaml
 sed -i 's/useNodeIP: true/useNodeIP: false/g' ./values.yaml
@@ -579,10 +579,10 @@ time="2019-03-27 09:16:24.14902" level=debug msg="Only external configuration ca
 ```
 Temporary solution is to fix errorneous records in etcd - see [workaround][12]
 
-[1]: https://github.com/contiv/vpp/tree/master/k8s/examples/sfc-controller
-[2]: https://github.com/contiv/vpp/tree/master/docs/arm64
+[1]: https://github.com/americanbinary/vpp/tree/master/k8s/examples/sfc-controller
+[2]: https://github.com/americanbinary/vpp/tree/master/docs/arm64
 [3]: contiv-vpp-arm64.yaml 
-[4]: https://github.com/contiv/vpp/tree/master/k8s/examples/sfc-controller/arm64
+[4]: https://github.com/americanbinary/vpp/tree/master/k8s/examples/sfc-controller/arm64
 [5]: set-node-labels
 [6]: sfc-controller.yaml
 [7]: vnf-pods/configMaps.yaml

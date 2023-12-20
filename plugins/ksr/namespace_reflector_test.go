@@ -24,7 +24,7 @@ import (
 	coreV1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 
-	proto "github.com/contiv/vpp/plugins/ksr/model/namespace"
+	proto "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

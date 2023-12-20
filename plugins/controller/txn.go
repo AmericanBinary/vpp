@@ -20,7 +20,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/controller/api"
 	scheduler_api "go.ligato.io/vpp-agent/v3/plugins/kvscheduler/api"
 )
 

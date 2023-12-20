@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	customnetmodel "github.com/contiv/vpp/plugins/crd/handler/customnetwork/model"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	customnetmodel "github.com/americanbinary/vpp/plugins/crd/handler/customnetwork/model"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/podmanager"
 	"github.com/pkg/errors"
 )
 

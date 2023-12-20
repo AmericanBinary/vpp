@@ -1,4 +1,4 @@
-//Package localclient contains mocks for transactions created by DSL structures in localclient packages.
+// Package localclient contains mocks for transactions created by DSL structures in localclient packages.
 package localclient
 
 import (
@@ -12,9 +12,9 @@ import (
 	linuxclient "go.ligato.io/vpp-agent/v3/clientv2/linux"
 	vppclient "go.ligato.io/vpp-agent/v3/clientv2/vpp"
 
-	mockcontroller "github.com/contiv/vpp/mock/localclient/controller"
-	mocklinux "github.com/contiv/vpp/mock/localclient/dsl/linux"
-	mockvpp "github.com/contiv/vpp/mock/localclient/dsl/vpp"
+	mockcontroller "github.com/americanbinary/vpp/mock/localclient/controller"
+	mocklinux "github.com/americanbinary/vpp/mock/localclient/dsl/linux"
+	mockvpp "github.com/americanbinary/vpp/mock/localclient/dsl/vpp"
 )
 
 // TxnTracker tracks all transactions executed or pending in the mock localclient.

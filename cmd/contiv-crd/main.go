@@ -15,8 +15,8 @@
 package main
 
 import (
-	"github.com/contiv/vpp/plugins/crd"
-	"github.com/contiv/vpp/plugins/ksr"
+	"github.com/americanbinary/vpp/plugins/crd"
+	"github.com/americanbinary/vpp/plugins/ksr"
 	"go.ligato.io/cn-infra/v2/agent"
 	"go.ligato.io/cn-infra/v2/datasync/kvdbsync"
 	"go.ligato.io/cn-infra/v2/datasync/resync"

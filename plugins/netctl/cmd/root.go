@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/contiv/vpp/plugins/netctl/cmdimpl"
-	"github.com/contiv/vpp/plugins/netctl/remote"
+	"github.com/americanbinary/vpp/plugins/netctl/cmdimpl"
+	"github.com/americanbinary/vpp/plugins/netctl/remote"
 	"github.com/spf13/cobra"
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 )
@@ -130,7 +130,7 @@ var cmdPodInfo = &cobra.Command{
 	},
 }
 
-//Execute will execute the command netctlcd
+// Execute will execute the command netctlcd
 func Execute() {
 	var rootCmd = &cobra.Command{Use: "netctl"}
 

@@ -17,21 +17,21 @@ package sfc
 import (
 	"strings"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	sfcmodel "github.com/contiv/vpp/plugins/crd/handler/servicefunctionchain/model"
-	"github.com/contiv/vpp/plugins/idalloc"
-	"github.com/contiv/vpp/plugins/ipam"
-	"github.com/contiv/vpp/plugins/ipnet"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/podmanager"
-	"github.com/contiv/vpp/plugins/sfc/config"
-	"github.com/contiv/vpp/plugins/sfc/processor"
-	"github.com/contiv/vpp/plugins/sfc/renderer/l2xconn"
-	"github.com/contiv/vpp/plugins/sfc/renderer/srv6"
-	"github.com/contiv/vpp/plugins/statscollector"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	sfcmodel "github.com/americanbinary/vpp/plugins/crd/handler/servicefunctionchain/model"
+	"github.com/americanbinary/vpp/plugins/idalloc"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/sfc/config"
+	"github.com/americanbinary/vpp/plugins/sfc/processor"
+	"github.com/americanbinary/vpp/plugins/sfc/renderer/l2xconn"
+	"github.com/americanbinary/vpp/plugins/sfc/renderer/srv6"
+	"github.com/americanbinary/vpp/plugins/statscollector"
 	"go.ligato.io/cn-infra/v2/infra"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 	"go.ligato.io/vpp-agent/v3/plugins/govppmux"
@@ -169,10 +169,10 @@ func (p *Plugin) AfterInit() error {
 }
 
 // HandlesEvent selects:
-//  - any resync event
-//  - KubeStateChange for SFCs and pods
-//  - pod custom interfaces update
-//  - external interfaces update
+//   - any resync event
+//   - KubeStateChange for SFCs and pods
+//   - pod custom interfaces update
+//   - external interfaces update
 func (p *Plugin) HandlesEvent(event controller.Event) bool {
 	if event.Method() != controller.Update {
 		return true
@@ -208,8 +208,8 @@ func (p *Plugin) Resync(event controller.Event, kubeStateData controller.KubeSta
 }
 
 // Update is called for:
-//  - KubeStateChange for or SFCs and pods
-//  - pod custom interfaces update
+//   - KubeStateChange for or SFCs and pods
+//   - pod custom interfaces update
 func (p *Plugin) Update(event controller.Event, txn controller.UpdateOperations) (changeDescription string, err error) {
 	p.resyncTxn = nil
 	p.updateTxn = txn

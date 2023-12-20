@@ -68,7 +68,7 @@ goland_version = ENV['GOLAND_VERSION']
 helm_version = ENV['HELM_VERSION']
 crd_disabled = ENV['CRD_DISABLED']
 ip_version = ENV['IP_VERSION'] || 'ipv4'
-contiv_dir = "/home/vagrant/gopath/src/github.com/contiv/vpp"
+contiv_dir = "/home/vagrant/gopath/src/github.com/americanbinary/vpp"
 helm_extra_opts = ENV['HELM_EXTRA_OPTS'] || ''
 vpp_worker_threads = ENV['VPP_WORKER_THREADS'] || ''
 

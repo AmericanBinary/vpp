@@ -43,9 +43,9 @@ cd build-root && dpkg -i *.deb
 ```
 
 #### 5. Re-generate binary API bindings in Ligato vpp-agent
-Lookup the `github.com/ligato/vpp-agent` commit ID in `~/go/src/github.com/contiv/vpp/glide.yaml`, e.g.:
+Lookup the `github.com/ligato/vpp-agent` commit ID in `~/go/src/github.com/americanbinary/vpp/glide.yaml`, e.g.:
 ```
-cat ~/go/src/github.com/contiv/vpp/glide.yaml
+cat ~/go/src/github.com/americanbinary/vpp/glide.yaml
 ...
 - package: github.com/ligato/vpp-agent
   version: dde9840771b6e59a72da20a83415c0453324c1f8 
@@ -67,7 +67,7 @@ make
 
 #### 6. Update & build Contiv-Agent
 ```
-cd ~/go/src/github.com/contiv/vpp/
+cd ~/go/src/github.com/americanbinary/vpp/
 rm -rf vendor/github.com/ligato/vpp-agent/
 cp -r ~/go/src/github.com/ligato/vpp-agent/ vendor/github.com/ligato/
 rm -rf vendor/github.com/ligato/vpp-agent/vendor/

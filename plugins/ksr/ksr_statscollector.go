@@ -17,7 +17,7 @@ package ksr
 import (
 	"time"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 	"go.ligato.io/cn-infra/v2/logging"
 	prometheusplugin "go.ligato.io/cn-infra/v2/rpc/prometheus"
 

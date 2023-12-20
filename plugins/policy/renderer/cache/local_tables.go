@@ -20,9 +20,9 @@ import (
 
 	"go.ligato.io/cn-infra/v2/logging"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/policy/renderer"
-	"github.com/contiv/vpp/plugins/policy/utils"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/policy/renderer"
+	"github.com/americanbinary/vpp/plugins/policy/utils"
 )
 
 // LocalTables is an ordered list of all cached local tables.
@@ -30,16 +30,17 @@ import (
 // all with logarithmic or constant complexity.
 //
 // API:
-//  Insert(table)
-//  Remove(table)
-//  RemoveByIdx(idx)
-//  RemoveByPredicate(func(table) -> bool)
-//  LookupByID(ID) -> table
-//  LookupByRules() -> table
-//  LookupByPod(pod) -> table
-//  AssignPod(table, podID)
-//  UnassignPod(table/nil=all, podID)
-//  GetIsolatedPods() -> pods
+//
+//	Insert(table)
+//	Remove(table)
+//	RemoveByIdx(idx)
+//	RemoveByPredicate(func(table) -> bool)
+//	LookupByID(ID) -> table
+//	LookupByRules() -> table
+//	LookupByPod(pod) -> table
+//	AssignPod(table, podID)
+//	UnassignPod(table/nil=all, podID)
+//	GetIsolatedPods() -> pods
 type LocalTables struct {
 	Log       logging.Logger
 	tables    []*ContivRuleTable               /* ordered by rules */

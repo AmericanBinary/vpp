@@ -27,11 +27,11 @@ import (
 	vpp_l2 "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/l2"
 	vpp_l3 "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/l3"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
 )
 
-//Checks adding a new node.
-//Checks expected error for adding duplicate node.
+// Checks adding a new node.
+// Checks expected error for adding duplicate node.
 func TestVppDataStore_CreateNode(t *testing.T) {
 	gomega.RegisterTestingT(t)
 	db := NewVppDataStore()
@@ -44,8 +44,8 @@ func TestVppDataStore_CreateNode(t *testing.T) {
 	gomega.Expect(err).To(gomega.Not(gomega.BeNil()))
 }
 
-//Checks adding a node and then looking it up.
-//Checks looking up a non-existent key.
+// Checks adding a node and then looking it up.
+// Checks looking up a non-existent key.
 func TestVppDataStore_RetrieveNode(t *testing.T) {
 	gomega.RegisterTestingT(t)
 	db := NewVppDataStore()
@@ -62,8 +62,8 @@ func TestVppDataStore_RetrieveNode(t *testing.T) {
 	gomega.Expect(nodeTwo).To(gomega.BeNil())
 }
 
-//Checks adding a node and then deleting it.
-//Checks whether expected error is returned when deleting non-existent key.
+// Checks adding a node and then deleting it.
+// Checks whether expected error is returned when deleting non-existent key.
 func TestVppDataStore_DeleteNode(t *testing.T) {
 	gomega.RegisterTestingT(t)
 	db := NewVppDataStore()
@@ -83,8 +83,8 @@ func TestVppDataStore_DeleteNode(t *testing.T) {
 
 }
 
-//Creates 3 new nodes and adds them to a database.
-//Then, the list is checked to see if it is in order.
+// Creates 3 new nodes and adds them to a database.
+// Then, the list is checked to see if it is in order.
 func TestVppDataStore_RetrieveAllNodes(t *testing.T) {
 	gomega.RegisterTestingT(t)
 	db := NewVppDataStore()

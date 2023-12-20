@@ -19,7 +19,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/contiv/vpp/plugins/crd/pkg/apis/contivppio"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/apis/contivppio"
 )
 
 var (

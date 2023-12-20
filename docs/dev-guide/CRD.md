@@ -42,7 +42,7 @@ This is a step-by-step guide for developers on how to add new [Custom Resource (
 2. Generate ClientSet, Informers and Listers for you CRD.
    From the Contiv-VPP top-level directory, run: 
    ```bash
-   $ cd $GOPATH/src/github.com/contiv/vpp
+   $ cd $GOPATH/src/github.com/americanbinary/vpp
    $ plugins/crd/scripts/update-codegen.sh
    ```
    
@@ -65,7 +65,7 @@ This is a step-by-step guide for developers on how to add new [Custom Resource (
    Use the following code template (replace `<your-resource>`) to construct and initialize resource controller inside
    the `initializeCRDs` method of the crd plugin (`plugins/crd/plugin_impl_crd.go`):
 ```go
-import "github.com/contiv/vpp/plugins/crd/handler/<your-resource>"
+import "github.com/americanbinary/vpp/plugins/crd/handler/<your-resource>"
 
 type Plugin struct {
     // ...
@@ -140,5 +140,5 @@ func (p *Plugin) onEtcdConnect() error {
 [crd-k8s-docs]: https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
 [controller-events]: CORE_PLUGINS.md#events
 [kvdbreflector]: ../../plugins/crd/handler/kvdbreflector/kvdb_reflector.go
-[db-resources]: https://github.com/contiv/vpp/tree/master/dbresources
+[db-resources]: https://github.com/americanbinary/vpp/tree/master/dbresources
 [contiv-yaml-template]: ../../k8s/contiv-vpp/templates/vpp.yaml

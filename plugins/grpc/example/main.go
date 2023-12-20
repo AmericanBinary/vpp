@@ -30,8 +30,8 @@ import (
 	"go.ligato.io/cn-infra/v2/logging/logrus"
 	"go.ligato.io/cn-infra/v2/utils/safeclose"
 
-	"github.com/contiv/vpp/plugins/grpc/clientv2"
-	"github.com/contiv/vpp/plugins/grpc/rpc"
+	"github.com/americanbinary/vpp/plugins/grpc/clientv2"
+	"github.com/americanbinary/vpp/plugins/grpc/rpc"
 )
 
 const (

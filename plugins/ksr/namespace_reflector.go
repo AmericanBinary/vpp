@@ -20,7 +20,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/plugins/ksr/model/namespace"
+	"github.com/americanbinary/vpp/plugins/ksr/model/namespace"
 	coreV1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/tools/cache"
 )

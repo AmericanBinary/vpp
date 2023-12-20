@@ -22,16 +22,16 @@ import (
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	sfcmodel "github.com/contiv/vpp/plugins/crd/handler/servicefunctionchain/model"
-	"github.com/contiv/vpp/plugins/ipam"
-	"github.com/contiv/vpp/plugins/ipnet"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/podmanager"
-	"github.com/contiv/vpp/plugins/sfc/renderer"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	sfcmodel "github.com/americanbinary/vpp/plugins/crd/handler/servicefunctionchain/model"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/sfc/renderer"
 )
 
 // SFCProcessor implements SFCProcessorAPI.
@@ -76,7 +76,7 @@ func (sp *SFCProcessor) AfterInit() error {
 }
 
 // Update is called for:
-//  - KubeStateChange for SFC-related an pod-related data
+//   - KubeStateChange for SFC-related an pod-related data
 func (sp *SFCProcessor) Update(event controller.Event) error {
 
 	if k8sChange, isK8sChange := event.(*controller.KubeStateChange); isK8sChange {

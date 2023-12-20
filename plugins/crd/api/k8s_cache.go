@@ -15,9 +15,9 @@
 package api
 
 import (
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ksr/model/node"
-	pod2 "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
+	pod2 "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 // K8sCache defines the operations on the K8s data store / cache.

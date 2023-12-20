@@ -17,8 +17,8 @@
 package contivppio
 
 import (
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/contivppio/v1"
-	internalinterfaces "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/contivppio/v1"
+	internalinterfaces "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

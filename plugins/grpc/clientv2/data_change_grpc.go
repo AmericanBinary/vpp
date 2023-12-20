@@ -17,7 +17,7 @@ package clientv2
 import (
 	"golang.org/x/net/context"
 
-	"github.com/contiv/vpp/plugins/grpc/rpc"
+	"github.com/americanbinary/vpp/plugins/grpc/rpc"
 	"go.ligato.io/vpp-agent/v3/clientv2/linux"
 	"go.ligato.io/vpp-agent/v3/clientv2/vpp"
 

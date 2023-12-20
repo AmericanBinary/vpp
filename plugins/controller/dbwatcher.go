@@ -31,9 +31,9 @@ import (
 
 	"go.ligato.io/vpp-agent/v3/plugins/orchestrator"
 
-	"github.com/contiv/vpp/dbresources"
-	"github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ksr"
+	"github.com/americanbinary/vpp/dbresources"
+	"github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ksr"
 )
 
 const (
@@ -51,10 +51,10 @@ var (
 
 // dbWatcher watches remote database for changes. Resync and data change events
 // are pushed to the Event loop as three different events:
-//  * DBResync: full snapshot of the kubernetes state data and of the external
-//              configuration
-//  * KubeStateChange: a change of a single value from the Kubernetes state data
-//  * ExternalConfigChange: a change of a single value from the external config
+//   - DBResync: full snapshot of the kubernetes state data and of the external
+//     configuration
+//   - KubeStateChange: a change of a single value from the Kubernetes state data
+//   - ExternalConfigChange: a change of a single value from the external config
 //
 // Furthermore, the content of the remote database is mirrored into the local DB.
 // When remote DB is not accessible (typically during early startup), the watcher

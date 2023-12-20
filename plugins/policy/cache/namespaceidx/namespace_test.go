@@ -17,7 +17,7 @@ package namespaceidx
 import (
 	"testing"
 
-	nsmodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
+	nsmodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
 	"github.com/onsi/gomega"
 	"go.ligato.io/cn-infra/v2/logging/logrus"
 )

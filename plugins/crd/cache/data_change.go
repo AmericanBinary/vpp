@@ -17,9 +17,9 @@ package cache
 import (
 	"reflect"
 
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	vppnodemodel "github.com/contiv/vpp/plugins/nodesync/vppnode"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	vppnodemodel "github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 	"github.com/golang/protobuf/proto"
 	"go.ligato.io/cn-infra/v2/datasync"
 

@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/crd/datastore"
-	"github.com/contiv/vpp/plugins/crd/testdata"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/datastore"
+	"github.com/americanbinary/vpp/plugins/crd/testdata"
 	"github.com/onsi/gomega"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/logging/logrus"

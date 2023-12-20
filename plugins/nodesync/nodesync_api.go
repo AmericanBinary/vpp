@@ -16,8 +16,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 // API defines methods provided by NodeSync for use by other plugins.
@@ -81,8 +81,10 @@ func (ns Nodes) String() string {
 //   - node joins the cluster
 //   - node leaves the cluster
 //   - VPP or management IP addresses of the node are updated
+//
 // For this node, the event is triggered only when:
 //   - the management IP addresses are updated
+//
 // For update of this node VPP IP addresses, there is already resync event NodeIPv*Change.
 type NodeUpdate struct {
 	NodeName  string

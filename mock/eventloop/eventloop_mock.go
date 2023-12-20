@@ -15,7 +15,7 @@
 package eventloop
 
 import (
-	controller "github.com/contiv/vpp/plugins/controller/api"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 // MockEventLoop is a mock implementation of the main event loop.

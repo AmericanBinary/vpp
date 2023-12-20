@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/contiv/vpp.svg?branch=master)](https://travis-ci.org/contiv/vpp)
 [![Coverage Status](https://coveralls.io/repos/github/contiv/vpp/badge.svg?branch=master)](https://coveralls.io/github/contiv/vpp?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/contiv/vpp)](https://goreportcard.com/report/github.com/contiv/vpp)
-[![GoDoc](https://godoc.org/github.com/contiv/vpp?status.svg)](https://godoc.org/github.com/contiv/vpp)
-[![GitHub license](https://img.shields.io/badge/license-Apache%20license%202.0-blue.svg)](https://github.com/contiv/vpp/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/americanbinary/vpp)](https://goreportcard.com/report/github.com/americanbinary/vpp)
+[![GoDoc](https://godoc.org/github.com/americanbinary/vpp?status.svg)](https://godoc.org/github.com/americanbinary/vpp)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20license%202.0-blue.svg)](https://github.com/americanbinary/vpp/blob/master/LICENSE)
 
 [Contiv-VPP](https://contivpp.io/) is a CNI plugin for Kubernetes that employs
 a programmable [CNF vSwitch](docs/ARCHITECTURE.md) based on [FD.io VPP](https://fd.io/)
@@ -24,7 +24,7 @@ For more details see [https://contivpp.io/](https://contivpp.io/)
 ## Releases
 |Release|Version|Date|
 |---|---|---|
-|Latest stable release|[![Latest release](https://img.shields.io/github/release/contiv/vpp.svg)](https://github.com/contiv/vpp/releases/latest)|[![release date](https://img.shields.io/github/release-date/contiv/vpp.svg?style=flat)](https://github.com/contiv/vpp/releases/latest)|
+|Latest stable release|[![Latest release](https://img.shields.io/github/release/contiv/vpp.svg)](https://github.com/americanbinary/vpp/releases/latest)|[![release date](https://img.shields.io/github/release-date/contiv/vpp.svg?style=flat)](https://github.com/americanbinary/vpp/releases/latest)|
 
 Please see the [CHANGELOG](CHANGELOG.md) for a full list of changes on every release.
 

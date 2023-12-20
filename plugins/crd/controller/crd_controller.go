@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/contiv/vpp/plugins/crd/handler"
+	"github.com/americanbinary/vpp/plugins/crd/handler"
 	"go.ligato.io/cn-infra/v2/logging"
 	apiextv1beta1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	apiextcs "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"

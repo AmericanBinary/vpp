@@ -25,7 +25,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrkey"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrkey"
 	"go.ligato.io/cn-infra/v2/db/keyval"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/servicelabel"

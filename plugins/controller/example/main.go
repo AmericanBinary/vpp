@@ -25,9 +25,9 @@ import (
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	plugin "github.com/contiv/vpp/plugins/controller"
-	"github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ksr"
+	plugin "github.com/americanbinary/vpp/plugins/controller"
+	"github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ksr"
 )
 
 /*

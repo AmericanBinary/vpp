@@ -4,7 +4,7 @@ import (
 	"go.ligato.io/vpp-agent/v3/clientv2/linux"
 	"go.ligato.io/vpp-agent/v3/clientv2/vpp"
 
-	"github.com/contiv/vpp/mock/localclient/dsl"
+	"github.com/americanbinary/vpp/mock/localclient/dsl"
 
 	"go.ligato.io/vpp-agent/v3/pkg/models"
 

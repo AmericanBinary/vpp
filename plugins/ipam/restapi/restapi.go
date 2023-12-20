@@ -15,7 +15,7 @@
 package restapi
 
 import (
-	"github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/ksr/model/pod"
 	"net"
 )
 

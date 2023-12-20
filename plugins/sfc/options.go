@@ -15,7 +15,7 @@
 package sfc
 
 import (
-	"github.com/contiv/vpp/plugins/statscollector"
+	"github.com/americanbinary/vpp/plugins/statscollector"
 	"go.ligato.io/cn-infra/v2/config"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/servicelabel"

@@ -20,7 +20,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

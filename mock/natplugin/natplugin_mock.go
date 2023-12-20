@@ -25,8 +25,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/mock/localclient"
-	"github.com/contiv/vpp/plugins/service/renderer"
+	"github.com/americanbinary/vpp/mock/localclient"
+	"github.com/americanbinary/vpp/plugins/service/renderer"
 
 	"go.ligato.io/cn-infra/v2/datasync/syncbase"
 	"go.ligato.io/cn-infra/v2/logging"

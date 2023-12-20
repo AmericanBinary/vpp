@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
 
 	"k8s.io/apimachinery/pkg/util/runtime"
 
 	meta "k8s.io/apimachinery/pkg/apis/meta/v1"
 	k8sCache "k8s.io/client-go/tools/cache"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/apis/telemetry/v1"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/telemetry/v1"
 	"go.ligato.io/cn-infra/v2/logging"
 
-	crdClientSet "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
-	listers "github.com/contiv/vpp/plugins/crd/pkg/client/listers/telemetry/v1"
+	crdClientSet "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
+	listers "github.com/americanbinary/vpp/plugins/crd/pkg/client/listers/telemetry/v1"
 )
 
-//CRDReport implements generation of reports to CRD
+// CRDReport implements generation of reports to CRD
 type CRDReport struct {
 	Deps
 }
@@ -45,7 +45,7 @@ func appendIfMissing(slice []telemetrymodel.NodeInfo, i telemetrymodel.NodeInfo)
 	return append(slice, i)
 }
 
-//GenerateCRDReport updates the CRD status in Kubernetes with the current status from the sfc-controller
+// GenerateCRDReport updates the CRD status in Kubernetes with the current status from the sfc-controller
 func (cr *CRDReport) GenerateCRDReport() {
 	// Fetch crdContivTelemetry from K8s cache
 	// The name in sfc is the namespace/name, which is the "namespace key". Split it out.

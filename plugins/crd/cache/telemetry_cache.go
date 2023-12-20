@@ -34,11 +34,11 @@ import (
 	vppl2descr "go.ligato.io/vpp-agent/v3/plugins/vpp/l2plugin/descriptor"
 	vppl3descr "go.ligato.io/vpp-agent/v3/plugins/vpp/l3plugin/descriptor"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/crd/datastore"
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/datastore"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
 )
 
 const (
@@ -163,15 +163,15 @@ func (ctc *ContivTelemetryCache) ReinitializeCache() {
 
 // nodeEventProcessor is the main processing loop for the Telemetry Cache.
 // It performs three tasks:
-// - Listens to data change and resync events from EtcdEtcd . It queues incoming
-//   events for further processing
-// - Performs periodic validations of the cluster. The validations are
-//   triggered by a timer. Upon receiving a validation trigger, the queued
-//   data change and resync events are processed, the VPP and K8s config state
-//   caches are updated and collection of real-time state from VPP Agents in
-//   the cluster is started.
-// - Collects all incoming real-time state from the cluster and starts the
-//   validation of the cluster state
+//   - Listens to data change and resync events from EtcdEtcd . It queues incoming
+//     events for further processing
+//   - Performs periodic validations of the cluster. The validations are
+//     triggered by a timer. Upon receiving a validation trigger, the queued
+//     data change and resync events are processed, the VPP and K8s config state
+//     caches are updated and collection of real-time state from VPP Agents in
+//     the cluster is started.
+//   - Collects all incoming real-time state from the cluster and starts the
+//     validation of the cluster state
 func (ctc *ContivTelemetryCache) nodeEventProcessor() {
 	for {
 		select {
@@ -299,7 +299,9 @@ func (ctc *ContivTelemetryCache) collectAgentInfo(node *telemetrymodel.Node) {
 
 }
 
-/* getNodeInfo runs in a goroutine to collect information about a specific node
+/*
+	getNodeInfo runs in a goroutine to collect information about a specific node
+
 using an http client. First, an http request is made to the specific url and port
 of the desired information and the request received is read and unmarshalled
 into a struct to contain that information. Then, a data transfer object is created

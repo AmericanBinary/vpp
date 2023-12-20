@@ -27,8 +27,8 @@ import (
 	"github.com/containernetworking/cni/pkg/version"
 	"google.golang.org/grpc"
 
+	cninb "github.com/americanbinary/vpp/plugins/podmanager/cni"
 	cnisb "github.com/containernetworking/cni/pkg/types/current"
-	cninb "github.com/contiv/vpp/plugins/podmanager/cni"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -17,7 +17,7 @@ package handler
 import (
 	"errors"
 
-	"github.com/contiv/vpp/mock/localclient"
+	"github.com/americanbinary/vpp/mock/localclient"
 	"github.com/golang/protobuf/proto"
 	"go.ligato.io/cn-infra/v2/datasync/syncbase"
 	"go.ligato.io/cn-infra/v2/logging"

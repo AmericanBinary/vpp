@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/contiv/vpp/plugins/contivconf/config"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/contivconf/config"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 // API defines methods provided by IPAM for use by other plugins.

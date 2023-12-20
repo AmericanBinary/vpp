@@ -18,21 +18,21 @@
 package dbresources
 
 import (
-	"github.com/contiv/vpp/plugins/idalloc/idallocation"
-	"github.com/contiv/vpp/plugins/ipam/ipalloc"
+	"github.com/americanbinary/vpp/plugins/idalloc/idallocation"
+	"github.com/americanbinary/vpp/plugins/ipam/ipalloc"
 	"github.com/golang/protobuf/proto"
 
-	customnetmodel "github.com/contiv/vpp/plugins/crd/handler/customnetwork/model"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	nodeconfig "github.com/contiv/vpp/plugins/crd/handler/nodeconfig/model"
-	sfcmodel "github.com/contiv/vpp/plugins/crd/handler/servicefunctionchain/model"
-	epmodel "github.com/contiv/vpp/plugins/ksr/model/endpoints"
-	nsmodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	svcmodel "github.com/contiv/vpp/plugins/ksr/model/service"
-	"github.com/contiv/vpp/plugins/nodesync/vppnode"
+	customnetmodel "github.com/americanbinary/vpp/plugins/crd/handler/customnetwork/model"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	nodeconfig "github.com/americanbinary/vpp/plugins/crd/handler/nodeconfig/model"
+	sfcmodel "github.com/americanbinary/vpp/plugins/crd/handler/servicefunctionchain/model"
+	epmodel "github.com/americanbinary/vpp/plugins/ksr/model/endpoints"
+	nsmodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	svcmodel "github.com/americanbinary/vpp/plugins/ksr/model/service"
+	"github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 )
 
 // DBResource represents a Kubernetes resource whose state is reflected in the database.

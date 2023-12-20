@@ -17,8 +17,8 @@ package cache
 import (
 	"testing"
 
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/policy/cache/testdata"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/policy/cache/testdata"
 	"github.com/onsi/gomega"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/logging/logrus"

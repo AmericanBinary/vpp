@@ -17,10 +17,10 @@
 package cache
 
 import (
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	nsmodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	nsmodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 // PolicyCacheAPI defines API of PolicyCache used for a non-persistent storage

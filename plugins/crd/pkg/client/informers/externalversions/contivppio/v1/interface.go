@@ -17,7 +17,7 @@
 package v1
 
 import (
-	internalinterfaces "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

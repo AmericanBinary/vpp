@@ -19,9 +19,9 @@ import (
 	"net"
 	"strings"
 
-	namespacemodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
+	namespacemodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 // RemoveDuplicates removes duplicates entries for a slice of strings

@@ -19,7 +19,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/contiv/vpp/plugins/netctl/remote"
+	"github.com/americanbinary/vpp/plugins/netctl/remote"
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 )
 

@@ -28,16 +28,16 @@ import (
 	scheduler "go.ligato.io/vpp-agent/v3/plugins/kvscheduler/api"
 	vpp_acl "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/acl"
 
-	. "github.com/contiv/vpp/mock/aclengine"
-	. "github.com/contiv/vpp/mock/ipnet"
-	"github.com/contiv/vpp/mock/localclient"
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ipnet"
-	"github.com/contiv/vpp/plugins/policy/renderer"
-	"github.com/contiv/vpp/plugins/policy/renderer/cache"
-	. "github.com/contiv/vpp/plugins/policy/renderer/testdata"
-	. "github.com/contiv/vpp/plugins/policy/utils"
+	. "github.com/americanbinary/vpp/mock/aclengine"
+	. "github.com/americanbinary/vpp/mock/ipnet"
+	"github.com/americanbinary/vpp/mock/localclient"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	"github.com/americanbinary/vpp/plugins/policy/renderer"
+	"github.com/americanbinary/vpp/plugins/policy/renderer/cache"
+	. "github.com/americanbinary/vpp/plugins/policy/renderer/testdata"
+	. "github.com/americanbinary/vpp/plugins/policy/utils"
 )
 
 const (

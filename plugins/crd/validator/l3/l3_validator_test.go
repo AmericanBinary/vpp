@@ -26,13 +26,13 @@ import (
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/logging/logrus"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/datastore"
-	"github.com/contiv/vpp/plugins/crd/testdata"
-	"github.com/contiv/vpp/plugins/crd/validator/l2"
-	"github.com/contiv/vpp/plugins/ipnet"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/datastore"
+	"github.com/americanbinary/vpp/plugins/crd/testdata"
+	"github.com/americanbinary/vpp/plugins/crd/validator/l2"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 type l3ValidatorTestVars struct {

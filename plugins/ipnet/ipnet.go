@@ -32,17 +32,17 @@ import (
 	linux_nsplugin "go.ligato.io/vpp-agent/v3/plugins/linux/nsplugin"
 	vpp_ifplugin "go.ligato.io/vpp-agent/v3/plugins/vpp/ifplugin"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	customnetmodel "github.com/contiv/vpp/plugins/crd/handler/customnetwork/model"
-	extifmodel "github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	"github.com/contiv/vpp/plugins/devicemanager"
-	"github.com/contiv/vpp/plugins/idalloc"
-	"github.com/contiv/vpp/plugins/idalloc/idallocation"
-	"github.com/contiv/vpp/plugins/ipam"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	customnetmodel "github.com/americanbinary/vpp/plugins/crd/handler/customnetwork/model"
+	extifmodel "github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	"github.com/americanbinary/vpp/plugins/devicemanager"
+	"github.com/americanbinary/vpp/plugins/idalloc"
+	"github.com/americanbinary/vpp/plugins/idalloc/idallocation"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/podmanager"
 )
 
 const (

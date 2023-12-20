@@ -22,8 +22,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"go.ligato.io/cn-infra/v2/datasync"
 
-	"github.com/contiv/vpp/dbresources"
-	controller "github.com/contiv/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/dbresources"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 // MockDataSync can be used to generate datasync events from provided data.

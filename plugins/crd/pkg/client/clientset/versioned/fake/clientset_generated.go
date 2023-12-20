@@ -17,13 +17,13 @@
 package fake
 
 import (
-	clientset "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
-	contivppv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1"
-	fakecontivppv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1/fake"
-	nodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1"
-	fakenodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1/fake"
-	telemetryv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1"
-	faketelemetryv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1/fake"
+	clientset "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
+	contivppv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1"
+	fakecontivppv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1/fake"
+	nodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1"
+	fakenodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1/fake"
+	telemetryv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1"
+	faketelemetryv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

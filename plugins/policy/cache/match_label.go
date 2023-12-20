@@ -17,8 +17,8 @@
 package cache
 
 import (
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/policy/utils"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/policy/utils"
 )
 
 // getMatchLabelPodsInsideNs returns the pods inside a given namespace that match a collection of Label Selectors.

@@ -19,8 +19,8 @@ import (
 	"net"
 	"sort"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/policy/renderer"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/policy/renderer"
 	"hash/fnv"
 )
 
@@ -193,18 +193,18 @@ func (tch *TxnChange) String() string {
 // matching algorithm in the destination network stack (otherwise the more specific
 // rules could be overshadowed and never matched).
 // There are two types of tables distinguished:
-//   1. Local table: should be applied to match against traffic leaving (IngressOrientation)
-//                   or entering (EgressOrientation) a selected subset of pods.
-//                   Every pod has at most one local table installed at any given time.
-//                   For local table, the set of rules is immutable. Different content
-//                   is treated as a new local table (and the original table may
-//                   get unassigned from some or all originally associated pods).
-//                   Local table has always at least one rule, otherwise it is simply
-//                   not tracked and returned by the cache.
-//   2. Global table: should be applied to match against traffic entering (IngressOrientation)
-//                    or leaving (EgressOrientation) the node.
-//                    There is always exactly one global table installed (per node).
-//                    The global table may contain an empty set of rules (meaning ALLOW-ALL).
+//  1. Local table: should be applied to match against traffic leaving (IngressOrientation)
+//     or entering (EgressOrientation) a selected subset of pods.
+//     Every pod has at most one local table installed at any given time.
+//     For local table, the set of rules is immutable. Different content
+//     is treated as a new local table (and the original table may
+//     get unassigned from some or all originally associated pods).
+//     Local table has always at least one rule, otherwise it is simply
+//     not tracked and returned by the cache.
+//  2. Global table: should be applied to match against traffic entering (IngressOrientation)
+//     or leaving (EgressOrientation) the node.
+//     There is always exactly one global table installed (per node).
+//     The global table may contain an empty set of rules (meaning ALLOW-ALL).
 type ContivRuleTable struct {
 	// Type is used to differentiate the global table from the local ones.
 	Type TableType

@@ -15,7 +15,7 @@
 package ipnet
 
 import (
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
 	"github.com/unrolled/render"
 	"net/http"
 )

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	svcmodel "github.com/contiv/vpp/plugins/ksr/model/service"
+	svcmodel "github.com/americanbinary/vpp/plugins/ksr/model/service"
 )
 
 // ServiceRendererAPI defines the API of Service Renderer.

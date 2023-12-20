@@ -15,7 +15,7 @@
 package service
 
 import (
-	"github.com/contiv/vpp/plugins/ksr/model/ksrkey"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrkey"
 )
 
 const (

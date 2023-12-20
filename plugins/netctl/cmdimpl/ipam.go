@@ -24,10 +24,10 @@ import (
 
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ipnet"
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
-	"github.com/contiv/vpp/plugins/netctl/remote"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
+	"github.com/americanbinary/vpp/plugins/netctl/remote"
 
 	vppifdescr "go.ligato.io/vpp-agent/v3/plugins/vpp/ifplugin/descriptor"
 )

@@ -15,7 +15,7 @@
 package idalloc
 
 import (
-	"github.com/contiv/vpp/plugins/idalloc/idallocation"
+	"github.com/americanbinary/vpp/plugins/idalloc/idallocation"
 )
 
 // API defines methods provided by the IDAllocator plugin for use by other plugins

@@ -18,7 +18,7 @@ Attach output of the show commands.
 ### Describe deployment
 Since contiv-vpp can be used with different configuration it is helpful 
 to attach the config that was applied. Either attach `values.yaml` passed to helm chart
-or the [corresponding part](https://github.com/contiv/vpp/blob/42b3bfbe8735508667b1e7f1928109a65dfd5261/k8s/contiv-vpp.yaml#L24-L38) from deployment yaml file.
+or the [corresponding part](https://github.com/americanbinary/vpp/blob/42b3bfbe8735508667b1e7f1928109a65dfd5261/k8s/contiv-vpp.yaml#L24-L38) from deployment yaml file.
 
 ```
   contiv.yaml: |-

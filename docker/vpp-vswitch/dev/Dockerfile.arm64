@@ -21,7 +21,7 @@ RUN if [ -n "$VPP_INSTALL_PKG" ]; then \
  fi
 
 # copy source files to the container
-COPY / /root/go/src/github.com/contiv/vpp
+COPY / /root/go/src/github.com/americanbinary/vpp
 
 # install Go
 ENV GOLANG_VERSION 1.13.8
@@ -37,7 +37,7 @@ ENV GOPATH /root/go
 ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
 # build
-RUN cd $GOPATH/src/github.com/contiv/vpp \
+RUN cd $GOPATH/src/github.com/americanbinary/vpp \
  && make contiv-init \
  && make contiv-agent
 
@@ -48,4 +48,4 @@ COPY docker/vpp-vswitch/dev/govpp.conf /opt/vpp-agent/dev/govpp.conf
 COPY docker/vpp-vswitch/prod/vswitch/vppctl /usr/local/bin/vppctl
 
 # run contiv-init as the default executable
-CMD ["/root/go/src/github.com/contiv/vpp/cmd/contiv-init/contiv-init", "-vpp-bin=/opt/vpp-agent/dev/vpp/build-root/install-vpp_debug-native/vpp/bin/vpp", "-agent-bin=/root/go/src/github.com/contiv/vpp/cmd/contiv-agent/contiv-agent"]
+CMD ["/root/go/src/github.com/americanbinary/vpp/cmd/contiv-init/contiv-init", "-vpp-bin=/opt/vpp-agent/dev/vpp/build-root/install-vpp_debug-native/vpp/bin/vpp", "-agent-bin=/root/go/src/github.com/americanbinary/vpp/cmd/contiv-agent/contiv-agent"]

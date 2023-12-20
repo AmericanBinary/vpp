@@ -21,8 +21,8 @@ import (
 	coreV1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/contiv/vpp/plugins/ksr/model/node"
-	"github.com/contiv/vpp/plugins/nodesync/vppnode"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 	"github.com/golang/protobuf/proto"
 	"go.ligato.io/cn-infra/v2/datasync"
 	"go.ligato.io/cn-infra/v2/servicelabel"

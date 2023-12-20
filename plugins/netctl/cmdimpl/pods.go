@@ -25,12 +25,12 @@ import (
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
-	"github.com/contiv/vpp/plugins/ksr"
-	"github.com/contiv/vpp/plugins/ksr/model/node"
-	"github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/netctl/remote"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
+	"github.com/americanbinary/vpp/plugins/ksr"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/netctl/remote"
 	"go.ligato.io/vpp-agent/v3/plugins/restapi/resturl"
 
 	vppif "go.ligato.io/vpp-agent/v3/plugins/vpp/ifplugin/vppcalls"
@@ -61,7 +61,7 @@ func PrintAllPods(client *remote.HTTPClient, db *etcd.BytesConnectionEtcd) {
 	w.Flush()
 }
 
-//PrintPodsPerNode will print out all of the non-local pods for a certain
+// PrintPodsPerNode will print out all of the non-local pods for a certain
 // pods along with their tap interface ip address
 func PrintPodsPerNode(client *remote.HTTPClient, db *etcd.BytesConnectionEtcd, input string) {
 	w := getWriter("")

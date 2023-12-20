@@ -29,7 +29,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/contiv/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 // PolicyReflector subscribes to K8s cluster to watch for changes

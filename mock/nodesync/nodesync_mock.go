@@ -17,8 +17,8 @@
 package nodesync
 
 import (
-	"github.com/contiv/vpp/plugins/contivconf"
-	"github.com/contiv/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/nodesync"
 )
 
 // MockNodeSync is a mock implementation of nodesync plugin.

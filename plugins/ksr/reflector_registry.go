@@ -16,7 +16,7 @@ package ksr
 
 import (
 	"fmt"
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 	"sync"
 )
 

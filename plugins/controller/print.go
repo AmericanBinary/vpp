@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/contiv/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 // printNewEvent prints a banner into stdout about a newly received event.

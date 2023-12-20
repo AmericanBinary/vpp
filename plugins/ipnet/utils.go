@@ -19,7 +19,7 @@ import (
 	"net"
 	"strings"
 
-	controller "github.com/contiv/vpp/plugins/controller/api"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
 
 	nslinuxcalls "go.ligato.io/vpp-agent/v3/plugins/linux/nsplugin/linuxcalls"
 	"go.ligato.io/vpp-agent/v3/plugins/vpp/binapi/vpp1908/vpe"

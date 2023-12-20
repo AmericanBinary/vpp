@@ -18,7 +18,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/contiv/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/contivconf"
 	"github.com/onsi/gomega"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/logging/logrus"

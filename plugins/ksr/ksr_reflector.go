@@ -28,7 +28,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 )
 
 const (

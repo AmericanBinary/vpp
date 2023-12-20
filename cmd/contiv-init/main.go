@@ -36,12 +36,12 @@ import (
 	"go.ligato.io/cn-infra/v2/logging/logrus"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/cmd/contiv-stn/model/stn"
-	"github.com/contiv/vpp/pkg/pci"
-	"github.com/contiv/vpp/plugins/contivconf"
-	"github.com/contiv/vpp/plugins/controller"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/nodesync/vppnode"
+	"github.com/americanbinary/vpp/cmd/contiv-stn/model/stn"
+	"github.com/americanbinary/vpp/pkg/pci"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/controller"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 )
 
 const (
@@ -250,9 +250,9 @@ func boltOpen(delete bool) (protoDb *kvproto.ProtoWrapper, err error) {
 // so that when agent starts without connectivity, it will execute local resync
 // against relatively up-to-date data that contains at least node ID.
 // Steps:
-//   1. if etcd is available, allocate/retrieve node ID from there
-//   2. if etcd is available, resync bolt against etcd
-//   3. check that node ID is in bolt
+//  1. if etcd is available, allocate/retrieve node ID from there
+//  2. if etcd is available, resync bolt against etcd
+//  3. check that node ID is in bolt
 func prepareForLocalResync(nodeName string, boltDB contivconf.KVBrokerFactory, etcdDB nodesync.KVDBWithAtomic) error {
 	var err error
 

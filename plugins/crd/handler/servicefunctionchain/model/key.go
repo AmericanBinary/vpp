@@ -14,7 +14,7 @@
 
 package model
 
-import "github.com/contiv/vpp/plugins/ksr/model/ksrkey"
+import "github.com/americanbinary/vpp/plugins/ksr/model/ksrkey"
 
 // Keyword defines the keyword identifying ServiceFunctionChain data.
 const Keyword = "servicefunctionchain"

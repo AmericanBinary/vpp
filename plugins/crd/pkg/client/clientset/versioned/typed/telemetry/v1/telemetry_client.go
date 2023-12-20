@@ -17,8 +17,8 @@
 package v1
 
 import (
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/apis/telemetry/v1"
-	"github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/telemetry/v1"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

@@ -26,7 +26,7 @@ import (
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/contiv/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

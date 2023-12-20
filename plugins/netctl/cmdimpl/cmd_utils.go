@@ -28,9 +28,9 @@ import (
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/plugins/ksr"
-	"github.com/contiv/vpp/plugins/ksr/model/node"
-	"github.com/contiv/vpp/plugins/nodesync/vppnode"
+	"github.com/americanbinary/vpp/plugins/ksr"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 )
 
 type clusterNodeInfo map[string]*oneNodeInfo

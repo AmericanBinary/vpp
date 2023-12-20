@@ -15,7 +15,7 @@
 package restapi
 
 import (
-	"github.com/contiv/vpp/plugins/contivconf/config"
+	"github.com/americanbinary/vpp/plugins/contivconf/config"
 )
 
 const (

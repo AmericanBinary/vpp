@@ -23,7 +23,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/plugins/ksr/model/sfc"
+	"github.com/americanbinary/vpp/plugins/ksr/model/sfc"
 )
 
 // SfcPodReflector subscribes to K8s cluster to watch for changes in the

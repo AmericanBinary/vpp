@@ -19,9 +19,9 @@ package versioned
 import (
 	"fmt"
 
-	contivppv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1"
-	nodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1"
-	telemetryv1 "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1"
+	contivppv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/contivppio/v1"
+	nodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/nodeconfig/v1"
+	telemetryv1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned/typed/telemetry/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

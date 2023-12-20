@@ -33,7 +33,7 @@ import (
 
 	scheduler "go.ligato.io/vpp-agent/v3/plugins/kvscheduler/api"
 
-	"github.com/contiv/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 const (
@@ -113,10 +113,10 @@ type WithInternalData interface {
 // Events then flow through the event handlers either in the forward or reverse
 // order, based on the event direction (api.UpdateEvent.Direction(), "Forward" for
 // Resync) and the event processing stage:
-//  * "Forward" event, Update/Resync stage: forward iteration
-//  * "Reverse" event, Update stage: backward iteration
-//  * "Forward" event, Revert stage: backward iteration
-//  * "Reverse" event, Revert stage: forward iteration
+//   - "Forward" event, Update/Resync stage: forward iteration
+//   - "Reverse" event, Update stage: backward iteration
+//   - "Forward" event, Revert stage: backward iteration
+//   - "Reverse" event, Revert stage: forward iteration
 //
 // For every event, the controller approaches a given handler first by checking
 // if the handler is actually interested in the event using the method:
@@ -128,10 +128,11 @@ type WithInternalData interface {
 // event loop).
 //
 // The handler may return error from Update/Resync wrapped in either:
-//  * api.FatalError to signal that the agent should be terminated
-//    (and restarted by k8s), or
-//  * api.AbortEventError to signal that the processing of the event should not
-//    continue and a resync is needed.
+//   - api.FatalError to signal that the agent should be terminated
+//     (and restarted by k8s), or
+//   - api.AbortEventError to signal that the processing of the event should not
+//     continue and a resync is needed.
+//
 // Non-fatal, non-abort error signals the controller that something is wrong and
 // a resync is needed, but if the transaction is of type BestEffort, then
 // the current event processing will continue.

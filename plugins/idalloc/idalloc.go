@@ -25,11 +25,11 @@ import (
 	"go.ligato.io/cn-infra/v2/infra"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/idalloc/idallocation"
-	"github.com/contiv/vpp/plugins/ksr"
-	"github.com/contiv/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/idalloc/idallocation"
+	"github.com/americanbinary/vpp/plugins/ksr"
+	"github.com/americanbinary/vpp/plugins/nodesync"
 )
 
 const (

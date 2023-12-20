@@ -20,7 +20,7 @@ Get started with Contiv-VPP using the Vagrant environment:
 To get started first ssh into the master node and browse into the sfc-controller folder: 
 ```
 vagrant ssh k8s-master
-cd /home/vagrant/gopath/src/github.com/contiv/vpp/k8s/examples/sfc-controller
+cd /home/vagrant/gopath/src/github.com/americanbinary/vpp/k8s/examples/sfc-controller
 ```
 
 To run the example, you will need to apply labels to your cluster's nodes. To do so, run the 
@@ -40,7 +40,7 @@ the scenario cases
 Deploy two L2PP service chains in two nodes. The four VNFs should be deployed on master and worker nodes. 
 First you need to create two K8s config Maps, common for all the VNFs. 
 ```
-cd /home/vagrant/gopath/src/github.com/contiv/vpp/k8s/examples/sfc-controller/vnf-pods
+cd /home/vagrant/gopath/src/github.com/americanbinary/vpp/k8s/examples/sfc-controller/vnf-pods
 kubectl apply -f configMaps.yaml
 ```
 

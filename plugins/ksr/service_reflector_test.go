@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/contiv/vpp/plugins/ksr/model/service"
+	"github.com/americanbinary/vpp/plugins/ksr/model/service"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

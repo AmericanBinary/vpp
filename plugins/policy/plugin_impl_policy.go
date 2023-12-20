@@ -17,19 +17,19 @@ package policy
 import (
 	"go.ligato.io/cn-infra/v2/infra"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ipam"
-	"github.com/contiv/vpp/plugins/ipnet"
-	"github.com/contiv/vpp/plugins/ksr/model/namespace"
-	"github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/podmanager"
-	"github.com/contiv/vpp/plugins/policy/cache"
-	"github.com/contiv/vpp/plugins/policy/configurator"
-	"github.com/contiv/vpp/plugins/policy/processor"
-	"github.com/contiv/vpp/plugins/policy/renderer/acl"
-	"github.com/contiv/vpp/plugins/policy/renderer/iptables"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	"github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	"github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/policy/cache"
+	"github.com/americanbinary/vpp/plugins/policy/configurator"
+	"github.com/americanbinary/vpp/plugins/policy/processor"
+	"github.com/americanbinary/vpp/plugins/policy/renderer/acl"
+	"github.com/americanbinary/vpp/plugins/policy/renderer/iptables"
 )
 
 // Plugin watches configuration of K8s resources (as reflected by KSR into ETCD)

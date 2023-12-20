@@ -15,13 +15,13 @@
 package config
 
 import (
-	nodeconfigcrd "github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	nodeconfigcrd "github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
 )
 
 // Config represents configuration for the Contiv agent.
 // The path to the configuration file can be specified in two ways:
-//  - using the `-contiv-config=<path to config>` argument, or
-//  - using the `CONTIV_CONFIG=<path to config>` environment variable
+//   - using the `-contiv-config=<path to config>` argument, or
+//   - using the `CONTIV_CONFIG=<path to config>` environment variable
 type Config struct {
 	InterfaceConfig      `yaml:",inline"`
 	RoutingConfig        `yaml:",inline"`

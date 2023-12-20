@@ -18,12 +18,12 @@ package processor
 
 import (
 	"fmt"
-	"github.com/contiv/vpp/plugins/ipam/ipalloc"
+	"github.com/americanbinary/vpp/plugins/ipam/ipalloc"
 
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	epmodel "github.com/contiv/vpp/plugins/ksr/model/endpoints"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	svcmodel "github.com/contiv/vpp/plugins/ksr/model/service"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	epmodel "github.com/americanbinary/vpp/plugins/ksr/model/endpoints"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	svcmodel "github.com/americanbinary/vpp/plugins/ksr/model/service"
 )
 
 // ResyncEventData wraps an entire state of K8s services that should be reflected

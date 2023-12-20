@@ -17,7 +17,7 @@ package telemetrymodel
 import (
 	"github.com/golang/protobuf/jsonpb"
 
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
 	"github.com/golang/protobuf/proto"
 	"go.ligato.io/cn-infra/v2/health/statuscheck/model/status"
 
@@ -228,19 +228,19 @@ func (v *VppL3Route) UnmarshalJSON(data []byte) error {
 // NodeTelemetries defines a map of NodeTelemetry
 type NodeTelemetries map[string]NodeTelemetry
 
-//NodeTelemetry holds the unmarshalled node telemetry JSON data
+// NodeTelemetry holds the unmarshalled node telemetry JSON data
 type NodeTelemetry struct {
 	Command string   `json:"command"`
 	Output  []Output `json:"output"`
 }
 
-//Output holds the unmarshalled node telemetry output
+// Output holds the unmarshalled node telemetry output
 type Output struct {
 	command string
 	output  []OutputEntry
 }
 
-//OutputEntry holds the unmarshalled node output telemetry data
+// OutputEntry holds the unmarshalled node output telemetry data
 type OutputEntry struct {
 	nodeName string
 	count    int

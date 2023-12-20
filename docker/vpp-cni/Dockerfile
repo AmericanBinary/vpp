@@ -5,7 +5,7 @@ ENV CGO_ENABLED=0
 
 RUN apk add --update wget git make gcc linux-headers libc-dev
 
-COPY . /go/src/github.com/contiv/vpp
+COPY . /go/src/github.com/americanbinary/vpp
 
 # we need the loopback binary from CNI
 # this binary can be obtained from the cni tarball
@@ -20,10 +20,10 @@ RUN export CNI_PLUGIN_VERSION=0.7 \
  && cd /go/src/github.com/containernetworking \
  && git clone https://github.com/containernetworking/plugins.git -b v$CNI_PLUGIN_VERSION \
  && cd plugins/plugins/meta/portmap/ \
- && git apply /go/src/github.com/contiv/vpp/docker/vpp-cni/portmap.diff \
+ && git apply /go/src/github.com/americanbinary/vpp/docker/vpp-cni/portmap.diff \
  && go build -ldflags '-s -w' -o /portmap
 
-WORKDIR /go/src/github.com/contiv/vpp
+WORKDIR /go/src/github.com/americanbinary/vpp
 
 # build contiv-cni
 RUN make contiv-cni
@@ -34,8 +34,8 @@ RUN mkdir -p /output/cni/bin && mkdir -p /output/cni/cfg \
  && cp cmd/contiv-cni/contiv-cni /output/cni/bin/ \
  && cp /cni/loopback /output/cni/bin/ \
  && cp /portmap /output/cni/bin/ \
- && cp /go/src/github.com/contiv/vpp/docker/vpp-cni/install.sh /output/cni/ \
- && cp /go/src/github.com/contiv/vpp/docker/vpp-cni/10-contiv-vpp.conflist /output/cni/cfg/
+ && cp /go/src/github.com/americanbinary/vpp/docker/vpp-cni/install.sh /output/cni/ \
+ && cp /go/src/github.com/americanbinary/vpp/docker/vpp-cni/10-contiv-vpp.conflist /output/cni/cfg/
 
 FROM alpine:3.8
 

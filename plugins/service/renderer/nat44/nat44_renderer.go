@@ -28,13 +28,13 @@ import (
 	nat_api "go.ligato.io/vpp-agent/v3/plugins/vpp/binapi/vpp1908/nat"
 	vpp_nat "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/nat"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ipam"
-	"github.com/contiv/vpp/plugins/ipnet"
-	"github.com/contiv/vpp/plugins/service/config"
-	"github.com/contiv/vpp/plugins/service/renderer"
-	"github.com/contiv/vpp/plugins/statscollector"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	"github.com/americanbinary/vpp/plugins/service/config"
+	"github.com/americanbinary/vpp/plugins/service/renderer"
+	"github.com/americanbinary/vpp/plugins/statscollector"
 )
 
 const (

@@ -21,10 +21,10 @@ package nodeconfig
 import (
 	"errors"
 
-	"github.com/contiv/vpp/plugins/crd/handler/kvdbreflector"
-	"github.com/contiv/vpp/plugins/crd/handler/nodeconfig/model"
-	"github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
-	crdClientSet "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
+	"github.com/americanbinary/vpp/plugins/crd/handler/kvdbreflector"
+	"github.com/americanbinary/vpp/plugins/crd/handler/nodeconfig/model"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	crdClientSet "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
 )
 
 // Handler implements the Handler interface for CRD<->KVDB Reflector.

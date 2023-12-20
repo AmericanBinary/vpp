@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrkey"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrkey"
 )
 
 const (

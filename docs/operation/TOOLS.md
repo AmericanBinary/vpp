@@ -147,7 +147,7 @@ In order to use CRDs you need to:
 
 * In the vagrant world edit the value of export
   CRD_DISABLED=${CRD_DISABLED:-true} to false found in this file:
-  https://github.com/contiv/vpp/blob/master/vagrant/defaults
+  https://github.com/americanbinary/vpp/blob/master/vagrant/defaults
 
 * In the manual setup use helm to generate the contiv-vpp.yaml with CRDs
   enabled:
@@ -158,4 +158,4 @@ In order to use CRDs you need to:
 [1]: https://kubernetes.io/docs/reference/using-api/api-overview/
 [2]: https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/
 [3]: https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
-[4]: https://github.com/contiv/vpp/blob/master/k8s/node-config/config-example.yaml
+[4]: https://github.com/americanbinary/vpp/blob/master/k8s/node-config/config-example.yaml

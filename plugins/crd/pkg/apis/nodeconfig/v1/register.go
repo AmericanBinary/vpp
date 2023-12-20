@@ -15,7 +15,7 @@
 package v1
 
 import (
-	"github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"

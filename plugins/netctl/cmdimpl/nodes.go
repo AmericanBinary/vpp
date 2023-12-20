@@ -30,7 +30,7 @@ import (
 	"go.ligato.io/cn-infra/v2/db/keyval/etcd"
 	"go.ligato.io/cn-infra/v2/health/statuscheck/model/status"
 
-	"github.com/contiv/vpp/plugins/netctl/remote"
+	"github.com/americanbinary/vpp/plugins/netctl/remote"
 )
 
 // PrintNodes will print out all of the cmdimpl in a network in a table format.

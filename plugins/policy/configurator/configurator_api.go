@@ -21,9 +21,9 @@ import (
 	"net"
 	"strconv"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/policy/renderer"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/policy/renderer"
 )
 
 // PolicyConfiguratorAPI defines the API of Policy Configurator.
@@ -71,6 +71,7 @@ type Txn interface {
 //   - translated port names
 //   - evaluated label selectors
 //   - IP network addresses converted to net.IP
+//
 // It is produced in this form and passed to Configurator by Policy Processor.
 // Traffic matched by a Contiv policy should by ALLOWED. Traffic not matched
 // by any policy from a **non-empty** set of policies assigned

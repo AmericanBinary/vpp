@@ -17,10 +17,10 @@
 package processor
 
 import (
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ipam/ipalloc"
-	epmodel "github.com/contiv/vpp/plugins/ksr/model/endpoints"
-	svcmodel "github.com/contiv/vpp/plugins/ksr/model/service"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ipam/ipalloc"
+	epmodel "github.com/americanbinary/vpp/plugins/ksr/model/endpoints"
+	svcmodel "github.com/americanbinary/vpp/plugins/ksr/model/service"
 )
 
 // propagateDataChangeEv propagates CHANGE in the K8s configuration into the Processor.

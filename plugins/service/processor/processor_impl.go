@@ -19,21 +19,21 @@ package processor
 import (
 	"strings"
 
-	"github.com/contiv/vpp/plugins/ipam/ipalloc"
+	"github.com/americanbinary/vpp/plugins/ipam/ipalloc"
 
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	"github.com/contiv/vpp/plugins/ipam"
-	"github.com/contiv/vpp/plugins/ipnet"
-	epmodel "github.com/contiv/vpp/plugins/ksr/model/endpoints"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	svcmodel "github.com/contiv/vpp/plugins/ksr/model/service"
-	"github.com/contiv/vpp/plugins/nodesync"
-	"github.com/contiv/vpp/plugins/podmanager"
-	"github.com/contiv/vpp/plugins/service/renderer"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	"github.com/americanbinary/vpp/plugins/ipam"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	epmodel "github.com/americanbinary/vpp/plugins/ksr/model/endpoints"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	svcmodel "github.com/americanbinary/vpp/plugins/ksr/model/service"
+	"github.com/americanbinary/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/podmanager"
+	"github.com/americanbinary/vpp/plugins/service/renderer"
 )
 
 const (
@@ -96,9 +96,9 @@ func (sp *ServiceProcessor) reset() error {
 }
 
 // Update is called for:
-//  - KubeStateChange for service-related data
-//  - AddPod & DeletePod
-//  - NodeUpdate event
+//   - KubeStateChange for service-related data
+//   - AddPod & DeletePod
+//   - NodeUpdate event
 func (sp *ServiceProcessor) Update(event controller.Event) error {
 	if ksChange, isKSChange := event.(*controller.KubeStateChange); isKSChange {
 		return sp.propagateDataChangeEv(ksChange)

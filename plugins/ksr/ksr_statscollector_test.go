@@ -17,7 +17,7 @@ package ksr
 import (
 	"fmt"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 	"github.com/onsi/gomega"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

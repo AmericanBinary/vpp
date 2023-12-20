@@ -25,7 +25,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/contiv/vpp/plugins/ksr/model/service"
+	"github.com/americanbinary/vpp/plugins/ksr/model/service"
 )
 
 // ServiceReflector subscribes to K8s cluster to watch for changes

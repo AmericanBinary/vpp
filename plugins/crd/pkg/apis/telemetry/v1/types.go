@@ -15,8 +15,8 @@
 package v1
 
 import (
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/crd/pkg/apis/telemetry"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/apis/telemetry"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

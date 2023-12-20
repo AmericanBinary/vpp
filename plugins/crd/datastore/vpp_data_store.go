@@ -23,13 +23,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ipnet"
-	"github.com/contiv/vpp/plugins/ipnet/restapi"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	"github.com/americanbinary/vpp/plugins/ipnet/restapi"
 	"go.ligato.io/cn-infra/v2/health/statuscheck/model/status"
 )
 
-//VppDataStore holds various maps which all take different keys but point to the same underlying value.
+// VppDataStore holds various maps which all take different keys but point to the same underlying value.
 type VppDataStore struct {
 	lock *sync.Mutex
 
@@ -112,7 +112,7 @@ func (vds *VppDataStore) DeleteNode(nodeName string) error {
 	return fmt.Errorf("node %s does not exist", nodeName)
 }
 
-//RetrieveAllNodes returns an ordered slice of all nodes in a database organized by name.
+// RetrieveAllNodes returns an ordered slice of all nodes in a database organized by name.
 func (vds *VppDataStore) RetrieveAllNodes() []*telemetrymodel.Node {
 	vds.lock.Lock()
 	defer vds.lock.Unlock()
@@ -155,7 +155,7 @@ func (vds *VppDataStore) UpdateNode(ID uint32, nodeName, IPAddr string) error {
 	return nil
 }
 
-//ClearCache with clear all vpp cache data except for the base NodeMap that contains
+// ClearCache with clear all vpp cache data except for the base NodeMap that contains
 // the discovered nodes..
 func (vds *VppDataStore) ClearCache() {
 	// Clear collected data for each node
@@ -245,7 +245,7 @@ func (vds *VppDataStore) SetLinuxInterfaces(nodeName string, nInt telemetrymodel
 	return nil
 }
 
-//SetNodeStaticRoutes is a simple function to set a nodes static routes given its name.
+// SetNodeStaticRoutes is a simple function to set a nodes static routes given its name.
 func (vds *VppDataStore) SetNodeStaticRoutes(nodeName string, nSrs telemetrymodel.NodeStaticRoutes) error {
 	vds.lock.Lock()
 	defer vds.lock.Unlock()

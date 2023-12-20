@@ -30,13 +30,13 @@ import (
 	vpp_interfaces "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/interfaces"
 	vpp_l2 "go.ligato.io/vpp-agent/v3/proto/ligato/vpp/l2"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/crd/datastore"
-	"github.com/contiv/vpp/plugins/crd/testdata"
-	"github.com/contiv/vpp/plugins/crd/validator/utils"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/datastore"
+	"github.com/americanbinary/vpp/plugins/crd/testdata"
+	"github.com/americanbinary/vpp/plugins/crd/validator/utils"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 type l2ValidatorTestVars struct {

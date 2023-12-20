@@ -17,10 +17,10 @@
 package cache
 
 import (
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	namespacemodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	namespacemodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 // changePropagateEvent propagates CHANGE in the K8s configuration into the Cache.

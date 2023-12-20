@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/contiv/vpp/plugins/service/renderer"
+	"github.com/americanbinary/vpp/plugins/service/renderer"
 )
 
 // StaticMappings represents a list of static mappings.

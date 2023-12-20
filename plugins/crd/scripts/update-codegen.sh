@@ -35,7 +35,7 @@ go list -f "{{ .Dir }} ${CRDGEN_DEPS_DIR}/{{ .Path }}" -m $module | xargs -L1 --
 
 # generate the code with:
 ${CRDGEN_DEPS_DIR}/k8s.io/code-generator/generate-groups.sh "deepcopy,client,informer,lister" \
-  github.com/contiv/vpp/plugins/crd/pkg/client \
-  github.com/contiv/vpp/plugins/crd/pkg/apis \
+  github.com/americanbinary/vpp/plugins/crd/pkg/client \
+  github.com/americanbinary/vpp/plugins/crd/pkg/apis \
   "telemetry:v1 nodeconfig:v1 contivppio:v1" \
   --go-header-file plugins/crd/scripts/custom-boilerplate.go.txt

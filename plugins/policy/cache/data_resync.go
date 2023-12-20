@@ -17,10 +17,10 @@
 package cache
 
 import (
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	namespacemodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	namespacemodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 // DataResyncEvent wraps an entire state of K8s that should be reflected into VPP.

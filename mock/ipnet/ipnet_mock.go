@@ -19,7 +19,7 @@ import (
 	"net"
 	"sync"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 const (

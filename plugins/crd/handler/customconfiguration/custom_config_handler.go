@@ -30,9 +30,9 @@ import (
 
 	"go.ligato.io/vpp-agent/v3/pkg/models"
 
-	"github.com/contiv/vpp/plugins/crd/handler/kvdbreflector"
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/apis/contivppio/v1"
-	crdClientSet "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
+	"github.com/americanbinary/vpp/plugins/crd/handler/kvdbreflector"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/contivppio/v1"
+	crdClientSet "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
 	apiextv1beta1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 )
 

@@ -14,7 +14,7 @@
 
 package ksrapi
 
-import "github.com/contiv/vpp/plugins/ksr/model/ksrkey"
+import "github.com/americanbinary/vpp/plugins/ksr/model/ksrkey"
 
 // Key returns the key under which a status metric is stored in Etcd.
 func Key(metric string) string {

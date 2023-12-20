@@ -15,15 +15,15 @@
 package datastore
 
 import (
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/ksr/model/node"
-	pod2 "github.com/contiv/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/ksr/model/node"
+	pod2 "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 	"github.com/pkg/errors"
 	"sort"
 	"sync"
 )
 
-//K8sDataStore implements the K8sCache interface. The K8sDataStore structure
+// K8sDataStore implements the K8sCache interface. The K8sDataStore structure
 // holds k8s related information separate from vpp related information
 type K8sDataStore struct {
 	lock       *sync.Mutex
@@ -41,7 +41,7 @@ func NewK8sDataStore() *K8sDataStore {
 	}
 }
 
-//CreateK8sNode will add a k8s type node to the Contiv Telemtry cache,
+// CreateK8sNode will add a k8s type node to the Contiv Telemtry cache,
 // making sure there are no duplicates.
 func (k *K8sDataStore) CreateK8sNode(name string, PodCIDR string, ProviderID string,
 	Addresses []*node.NodeAddress, NodeInfo *node.NodeSystemInfo) error {

@@ -16,7 +16,7 @@
 package main
 
 import (
-	"github.com/contiv/vpp/plugins/netctl/cmd"
+	"github.com/americanbinary/vpp/plugins/netctl/cmd"
 )
 
 func main() {

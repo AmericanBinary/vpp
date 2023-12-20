@@ -21,10 +21,10 @@ package externalinterface
 import (
 	"errors"
 
-	"github.com/contiv/vpp/plugins/crd/handler/externalinterface/model"
-	"github.com/contiv/vpp/plugins/crd/handler/kvdbreflector"
-	"github.com/contiv/vpp/plugins/crd/pkg/apis/contivppio/v1"
-	crdClientSet "github.com/contiv/vpp/plugins/crd/pkg/client/clientset/versioned"
+	"github.com/americanbinary/vpp/plugins/crd/handler/externalinterface/model"
+	"github.com/americanbinary/vpp/plugins/crd/handler/kvdbreflector"
+	"github.com/americanbinary/vpp/plugins/crd/pkg/apis/contivppio/v1"
+	crdClientSet "github.com/americanbinary/vpp/plugins/crd/pkg/client/clientset/versioned"
 	apiextv1beta1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 )
 

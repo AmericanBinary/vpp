@@ -21,7 +21,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/contiv/vpp/dbresources"
+	"github.com/americanbinary/vpp/dbresources"
 )
 
 // KeyValuePairs is a set of key-value pairs.

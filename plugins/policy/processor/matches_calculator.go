@@ -3,9 +3,9 @@ package processor
 import (
 	"net"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	config "github.com/contiv/vpp/plugins/policy/configurator"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	config "github.com/americanbinary/vpp/plugins/policy/configurator"
 )
 
 // calculateMatches finds the returns a predicate that selects a subset of the traffic by calculating

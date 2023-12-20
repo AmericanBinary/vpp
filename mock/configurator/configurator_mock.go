@@ -19,8 +19,8 @@ package configurator
 import (
 	"net"
 
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
 
 	"go.ligato.io/cn-infra/v2/logging"
 )

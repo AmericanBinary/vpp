@@ -19,9 +19,9 @@ package externalversions
 import (
 	"fmt"
 
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/apis/contivppio/v1"
-	nodeconfigv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
-	telemetryv1 "github.com/contiv/vpp/plugins/crd/pkg/apis/telemetry/v1"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/contivppio/v1"
+	nodeconfigv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/nodeconfig/v1"
+	telemetryv1 "github.com/americanbinary/vpp/plugins/crd/pkg/apis/telemetry/v1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

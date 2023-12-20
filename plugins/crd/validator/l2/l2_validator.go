@@ -25,10 +25,10 @@ import (
 
 	"strings"
 
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/cache/telemetrymodel"
-	"github.com/contiv/vpp/plugins/crd/datastore"
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/cache/telemetrymodel"
+	"github.com/americanbinary/vpp/plugins/crd/datastore"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
 )
 
 const (

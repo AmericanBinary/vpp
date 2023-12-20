@@ -29,7 +29,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/contiv/vpp/plugins/ksr/model/ksrapi"
+	"github.com/americanbinary/vpp/plugins/ksr/model/ksrapi"
 
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"

@@ -16,9 +16,9 @@
 package validator
 
 import (
-	"github.com/contiv/vpp/plugins/crd/api"
-	"github.com/contiv/vpp/plugins/crd/validator/l2"
-	"github.com/contiv/vpp/plugins/crd/validator/l3"
+	"github.com/americanbinary/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/validator/l2"
+	"github.com/americanbinary/vpp/plugins/crd/validator/l3"
 	"go.ligato.io/cn-infra/v2/logging"
 )
 

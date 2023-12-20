@@ -15,9 +15,9 @@
 package testdata
 
 import (
-	nsmodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	"github.com/contiv/vpp/plugins/ksr/model/policy"
+	nsmodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	"github.com/americanbinary/vpp/plugins/ksr/model/policy"
 )
 
 const (

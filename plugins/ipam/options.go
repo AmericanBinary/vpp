@@ -17,8 +17,8 @@ package ipam
 import (
 	"go.ligato.io/cn-infra/v2/logging"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	"github.com/contiv/vpp/plugins/nodesync"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/nodesync"
 	"go.ligato.io/cn-infra/v2/rpc/rest"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 )

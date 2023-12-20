@@ -17,8 +17,8 @@
 package telemetry
 
 import (
-	internalinterfaces "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
-	v1 "github.com/contiv/vpp/plugins/crd/pkg/client/informers/externalversions/telemetry/v1"
+	internalinterfaces "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/americanbinary/vpp/plugins/crd/pkg/client/informers/externalversions/telemetry/v1"
 )
 
 // Interface provides access to each of this group's versions.

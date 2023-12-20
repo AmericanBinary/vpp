@@ -22,11 +22,11 @@ import (
 
 	"go.ligato.io/cn-infra/v2/datasync"
 
-	nodemodel "github.com/contiv/vpp/plugins/ksr/model/node"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	vppnodemodel "github.com/contiv/vpp/plugins/nodesync/vppnode"
+	nodemodel "github.com/americanbinary/vpp/plugins/ksr/model/node"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	vppnodemodel "github.com/americanbinary/vpp/plugins/nodesync/vppnode"
 
-	"github.com/contiv/vpp/plugins/crd/api"
+	"github.com/americanbinary/vpp/plugins/crd/api"
 )
 
 // Resync sends the resync event passed as an argument to the ctc telemetryCache

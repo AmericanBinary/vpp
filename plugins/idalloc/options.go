@@ -15,7 +15,7 @@
 package idalloc
 
 import (
-	"github.com/contiv/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/contivconf"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/servicelabel"
 )

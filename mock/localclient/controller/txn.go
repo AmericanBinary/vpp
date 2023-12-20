@@ -9,7 +9,7 @@ import (
 
 	scheduler_api "go.ligato.io/vpp-agent/v3/plugins/kvscheduler/api"
 
-	controller "github.com/contiv/vpp/plugins/controller/api"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
 )
 
 // MockControllerTxn is a mock implementation of the Transaction interface from Controller.

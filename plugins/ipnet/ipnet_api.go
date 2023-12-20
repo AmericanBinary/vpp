@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net"
 
-	controller "github.com/contiv/vpp/plugins/controller/api"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
+	controller "github.com/americanbinary/vpp/plugins/controller/api"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
 )
 
 /********************************* Plugin API *********************************/

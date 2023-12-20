@@ -113,14 +113,14 @@ possible (e.g. separate VRFs, custom links between vswitch and the pods, etc.)
 
 
 [ligato-vpp-agent]: http://github.com/ligato/vpp-agent
-[controller-plugin]: https://github.com/contiv/vpp/tree/master/plugins/controller
-[rpc-model]: https://github.com/contiv/vpp/blob/master/plugins/grpc/rpc/rpc.proto
-[controller-plugin]: https://github.com/contiv/vpp/blob/master/plugins/controller/plugin_controller.go
-[ext-events]: https://github.com/contiv/vpp/blob/master/plugins/controller/api/db.go
-[grpc-clientv2]: https://github.com/contiv/vpp/tree/master/plugins/grpc/clientv2
+[controller-plugin]: https://github.com/americanbinary/vpp/tree/master/plugins/controller
+[rpc-model]: https://github.com/americanbinary/vpp/blob/master/plugins/grpc/rpc/rpc.proto
+[controller-plugin]: https://github.com/americanbinary/vpp/blob/master/plugins/controller/plugin_controller.go
+[ext-events]: https://github.com/americanbinary/vpp/blob/master/plugins/controller/api/db.go
+[grpc-clientv2]: https://github.com/americanbinary/vpp/tree/master/plugins/grpc/clientv2
 [clientv2-api]: https://github.com/ligato/vpp-agent/tree/dev/clientv2
-[grpc-example]: https://github.com/contiv/vpp/tree/master/plugins/grpc/example
-[grpc-plugin]: https://github.com/contiv/vpp/tree/master/plugins/grpc
+[grpc-example]: https://github.com/americanbinary/vpp/tree/master/plugins/grpc/example
+[grpc-plugin]: https://github.com/americanbinary/vpp/tree/master/plugins/grpc
 [txn-error]: https://github.com/ligato/vpp-agent/blob/dev/plugins/kvscheduler/api/errors.go
 [vpp-models]: https://github.com/ligato/vpp-agent/tree/dev/api/models/vpp
 [linux-models]: https://github.com/ligato/vpp-agent/tree/dev/api/models/linux

@@ -136,6 +136,6 @@ SRv6 - My LocalSID Table:
 [srv6-ietf]: https://tools.ietf.org/html/rfc8402#section-8.2
 [ipv6-setup]: IPV6.md
 [values.yaml]: ../../k8s/contiv-vpp/values.yaml
-[values-arm64.yaml]: https://github.com/contiv/vpp/blob/master/k8s/contiv-vpp/values-arm64.yaml
+[values-arm64.yaml]: https://github.com/americanbinary/vpp/blob/master/k8s/contiv-vpp/values-arm64.yaml
 [srv6-renderer-communication-from-pod]: ../dev-guide/services/srv6-renderer-communication-from-pod.png "SRv6 service communication originating in pod"
 [srv6-renderer-communication-from-host]: ../dev-guide/services/srv6-renderer-communication-from-host.png "SRv6 service communication originating in host"

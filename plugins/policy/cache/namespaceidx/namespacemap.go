@@ -15,8 +15,8 @@
 package namespaceidx
 
 import (
-	namespacemodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	"github.com/contiv/vpp/plugins/policy/utils"
+	namespacemodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	"github.com/americanbinary/vpp/plugins/policy/utils"
 	"go.ligato.io/cn-infra/v2/idxmap"
 	"go.ligato.io/cn-infra/v2/idxmap/mem"
 	"go.ligato.io/cn-infra/v2/logging"

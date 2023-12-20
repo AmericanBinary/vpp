@@ -2,8 +2,8 @@
 FROM golang:1.13.8-alpine3.10 as builder
 ENV CGO_ENABLED=0
 RUN apk add --update git make
-COPY . /go/src/github.com/contiv/vpp
-WORKDIR /go/src/github.com/contiv/vpp
+COPY . /go/src/github.com/americanbinary/vpp
+WORKDIR /go/src/github.com/americanbinary/vpp
 RUN make contiv-ui-backend
 
 # 2. Angular UI
@@ -28,7 +28,7 @@ RUN cd /src/ui && ng build --prod --aot --output-hashing=all
 FROM alpine:3.8
 RUN apk --no-cache add ca-certificates
 WORKDIR /app/server/
-COPY --from=builder /go/src/github.com/contiv/vpp/cmd/contiv-ui-backend /app/server/
+COPY --from=builder /go/src/github.com/americanbinary/vpp/cmd/contiv-ui-backend /app/server/
 COPY --from=frontend /src/ui/dist/contiv-vpp-ui /app/server/static/
 EXPOSE 9500
 CMD ["./contiv-ui-backend"]

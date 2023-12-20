@@ -17,15 +17,15 @@ package cache
 import (
 	"testing"
 
-	"github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/policy/cache/testdata"
+	"github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/policy/cache/testdata"
 	"github.com/onsi/gomega"
 	"go.ligato.io/cn-infra/v2/logging"
 	"go.ligato.io/cn-infra/v2/logging/logrus"
 
-	"github.com/contiv/vpp/mock/datasync"
+	"github.com/americanbinary/vpp/mock/datasync"
 )
 
 func TestLookupPod(t *testing.T) {

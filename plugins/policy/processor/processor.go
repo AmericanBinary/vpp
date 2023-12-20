@@ -21,14 +21,14 @@ import (
 
 	"go.ligato.io/cn-infra/v2/logging"
 
-	"github.com/contiv/vpp/plugins/contivconf"
-	"github.com/contiv/vpp/plugins/ipnet"
-	nsmodel "github.com/contiv/vpp/plugins/ksr/model/namespace"
-	podmodel "github.com/contiv/vpp/plugins/ksr/model/pod"
-	policymodel "github.com/contiv/vpp/plugins/ksr/model/policy"
-	"github.com/contiv/vpp/plugins/policy/cache"
-	config "github.com/contiv/vpp/plugins/policy/configurator"
-	"github.com/contiv/vpp/plugins/policy/utils"
+	"github.com/americanbinary/vpp/plugins/contivconf"
+	"github.com/americanbinary/vpp/plugins/ipnet"
+	nsmodel "github.com/americanbinary/vpp/plugins/ksr/model/namespace"
+	podmodel "github.com/americanbinary/vpp/plugins/ksr/model/pod"
+	policymodel "github.com/americanbinary/vpp/plugins/ksr/model/policy"
+	"github.com/americanbinary/vpp/plugins/policy/cache"
+	config "github.com/americanbinary/vpp/plugins/policy/configurator"
+	"github.com/americanbinary/vpp/plugins/policy/utils"
 )
 
 // PolicyProcessor processes K8s State data and generates a set of Contiv

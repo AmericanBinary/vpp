@@ -5,14 +5,14 @@ ENV CGO_ENABLED=0
 
 RUN apk add --update git make
 
-COPY . /go/src/github.com/contiv/vpp
+COPY . /go/src/github.com/americanbinary/vpp
 
-WORKDIR /go/src/github.com/contiv/vpp
+WORKDIR /go/src/github.com/americanbinary/vpp
 
 RUN make contiv-stn
 
 FROM scratch
 
-COPY --from=builder /go/src/github.com/contiv/vpp/cmd/contiv-stn/contiv-stn /contiv-stn
+COPY --from=builder /go/src/github.com/americanbinary/vpp/cmd/contiv-stn/contiv-stn /contiv-stn
 
 ENTRYPOINT ["/contiv-stn"]
